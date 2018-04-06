@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const sk = require('../src/soku_init');
+
+sk.init();
