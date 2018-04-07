@@ -42,14 +42,14 @@ function execCli() {
     const argv = parseArgs(process.argv.slice(2));
     // console.log(argv);
 
-    const cmd = getcmd(argv);
+    let cmd = getcmd(argv);
 
     // console.log(cmd);
     
     if(!cli[cmd]) {
-        cmd = CONFIG.DEFAULT_CMD;
+        cmd = CONFIG.DEFAULT_CLI;
     }
-
+    
     cli[cmd].init(argv);
 }
 

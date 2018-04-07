@@ -6,4 +6,4 @@
 
     -l              Linux命令查询
 
-    -z              中文模糊查询linux命令
+    -z              中文模糊匹配相关的Linux命令

@@ -8,11 +8,11 @@ module.exports = {
     init: function (args) {
         let cmd = 'help';
         
-        if (args.h) {
-            cmd = args.h;
-        }else if (args.help) {
-            cmd = args.help;
-        }
+        // if (args.h && args.h !== 'true') {
+        //     cmd = args.h;
+        // }else if (args.help && args.help !== 'true') {
+        //     cmd = args.help;
+        // }
         // console.log(cmd);
         
         const file = path.join(__dirname, '../../doc', `${cmd}.md`);
